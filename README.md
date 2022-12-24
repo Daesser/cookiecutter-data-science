@@ -73,11 +73,38 @@ The directory structure of your new project looks like this:
 │                         generated with `pip freeze > requirements.txt`
 │
 ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
-├── src                <- Source code for use in this project.
-│   ├── __init__.py    <- Makes src a Python module
-│   │
-│   ├── data           <- Scripts to download or generate data
-│   │   └── make_dataset.py
+
+
+
+├── data                
+    │
+    ├── front                     
+    │    ├── flash
+    │    │     └── close
+    │    │     └── middle
+    │    │     └── far
+    │    └── no-flash
+    │          └── close
+    │          └── middle
+    │          └── far
+    ├── back           
+    │    ├── flash
+    │    │     └── close
+    │    │     └── middle
+    │    │     └── far
+    │    └── no-flash
+    │          └── close
+    │          └── middle
+    │          └── far
+    ├── side           
+         ├── flash
+         │     └── close
+         │     └── middle
+         └── no-flash
+               └── close
+               └── middle
+    
+    
 │   │
 │   ├── features       <- Scripts to turn raw data into features for modeling
 │   │   └── build_features.py
